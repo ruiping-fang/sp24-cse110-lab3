@@ -29,7 +29,9 @@ h1, h2, h3 {
 /* Mixing two colors in sRGB color space */
 
 element {
-    background-color: color-mix(in srgb, blue 50%, yellow);
+    background-color: #7F7F00; /* Equivalent to mixing blue and yellow in equal parts */
+  /* New color syntax (if supported) */
+    background-color: color-mix(in srgb, blue 50%, yellow 50%);
 }
 
 
@@ -60,7 +62,8 @@ nav li {
 /* Example of pseudo-classes */
 
 a:hover {
-    color: color-mix(in srgb, blue 70%, white);
+    color: #B3B3FF; /* Lighter blue, as an approximation of the color-mix result */
+    color: color-mix(in srgb, blue 70%, white 30%);
 }
 
 /* Flexbox layout for navigation */
@@ -165,7 +168,8 @@ footer {
 }
 button {
     display: inline;
-    background-color: #cb912d; /* Fallback color */
+    background-color: #cb912d; 
+    /* New color syntax (if supported) */
     background-color: color(srgb 0.79 0.57 0.16);
     color: color-mix(in srgb, #191303 90%, white);
     /* Text color */
