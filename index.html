@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kickoff meeting minutes for Team 17 - Seaside Software">
-    <title>Kickoff Meeting</title>
+    
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <title>Kickoff Meeting</title>
 </head>
 <body>
     <header>
@@ -44,7 +50,7 @@
                 <br>
                 <strong>Ruiping</strong>: I am a junior year student, and I am interested in database and machine learning.
                 <br>
-                <em>Ryan I.</em>: My name is Ryan Izadshenas and I am a second-year undergraduate student studying Computer Science w/Bioinformatics at UCSD.
+                <i>Ryan</i>: My name is Ryan Izadshenas and I am a second-year undergraduate student studying Computer Science w/Bioinformatics at UCSD.
                 <br>
                 <strong>Ryan L.</strong>: Hello! I'm Ryan, a second year Computer Science major here at UC San Diego in Revelle College. I enjoy hanging out with my friends, playing video games and practing the piano.
                 <br>
@@ -71,60 +77,85 @@
             <p>Ideas for the team introduction video.</p>
         </section>
 
-        <img src="lab2_p1.png" alt="Coding Image">
+        <style>
+            .responsive {
+              max-width: 100%;
+              height: auto;
+            }
+        </style>
+
+        <section>
+            <img src="lab2_p1.png" alt="Coding Image" class ="responsive" width="450" height="400">
+        </section> 
+        
+
+        <hr>
 
         <section id="recordings">
             <h2>Recordings</h2>
-            <p>Imagine - John Lennon</p>
+            <p style="color:rgb(3, 39, 124)"><span><em>Imagine</em></span> - John Lennon</p>
+            
             <audio controls>
                 <source src="imagine.mp3" type="audio/mp3">
             </audio>
         </section>
 
+        <hr>
+
         <div>
             <details>
-                <summary>Why this song</summary>
-                <p>Because I <code>like</code> it</p>
+                <summary>Details</summary>
+                <p>Provides some <code>details</code> if needed</p>
             </details>
         </div>
         
-
-        <h2 id="team">Our Wonderful Team</h2>
-        <!-- Embedding a YouTube video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9z5bXX6-02k" 
+        <section id="Our Wonderful Team">
+            <h2 id="team">Our Wonderful Team</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9z5bXX6-02k" 
             title="YouTube video player" style="border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <form>
-            <fieldset>
-                <legend>Feedback Form</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date"><br>
-                <label for="suggestions">Suggestions:</label>
-                <textarea id="suggestions" name="suggestions"></textarea><br>
-                <label for="improvements">Areas of Improvement:</label>
-                <select id="improvements" name="improvements">
-                    <option value="communication">Communication</option>
-                    <option value="timeliness">Timeliness</option>
-                    <!-- ...other options can be added... -->
-                </select><br>
-                <label for="satisfied">Satisfied with the meeting?</label>
-                <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
-                <label for="satisfied">Yes</label>
-                <input type="radio" id="not_satisfied" name="satisfaction" value="not_satisfied">
-                <label for="not_satisfied">No</label><br>
-                <label for="attend_next">Plan to attend the next meeting?</label>
-                <input type="checkbox" id="attend_next" name="attend_next" value="yes">
-                <label for="attend_next">Yes</label><br>
-                <datalist id="times">
-                    <option value="Morning"></option>
-                    <option value="Afternoon"></option>
-                    <option value="Evening"></option>
-                </datalist>
-            </fieldset>
-        </form>
-    </main>
+
+        </section>
+        
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Feedback Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="suggestions">Suggestions:</label>
+                    <textarea id="suggestions" name="suggestions"></textarea><br>
+                    <label for="improvements">Areas of Improvement:</label>
+                    <select id="improvements" name="improvements">
+                        <option value="communication">Communication</option>
+                        <option value="timeliness">Timeliness</option>
+                        <!-- ...other options can be added... -->
+                    </select><br>
+                    <label for="satisfied">Satisfied with the meeting?</label>
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                    <label for="satisfied">Yes</label>
+                    <input type="radio" id="not_satisfied" name="satisfaction" value="not_satisfied">
+                    <label for="not_satisfied">No</label><br>
+                    <label for="attend_next">Plan to attend the next meeting?</label>
+                    <input type="checkbox" id="attend_next" name="attend_next" value="yes">
+                    <label for="attend_next">Yes</label><br>
+                    <datalist id="times">
+                        <option value="Morning"></option>
+                        <option value="Afternoon"></option>
+                        <option value="Evening"></option>
+                    </datalist>
+    
+                    <button type="submit">Submit</button>
+    
+                </fieldset>
+            </form>
+      
+
+        </section>
+        
+          </main>
 
     <footer>
         <p>&copy; 2024 by Seaside Software. All rights reserved.</p>
