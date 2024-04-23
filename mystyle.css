@@ -27,8 +27,9 @@ h1, h2, h3 {
 }
 
 /* Mixing two colors in sRGB color space */
+
 element {
-    background-color: color-mix(in srgb, blue 50%, yellow 50%);
+    background-color: color-mix(in srgb, blue 50%, yellow);
 }
 
 
@@ -57,8 +58,9 @@ nav li {
 }
 
 /* Example of pseudo-classes */
+
 a:hover {
-    color: color-mix(in srgb, blue 70%, white 30%);
+    color: color-mix(in srgb, blue 70%, white);
 }
 
 /* Flexbox layout for navigation */
@@ -108,7 +110,7 @@ form {
     /* Margin */
     border-radius: 10px;
     /* Border radius */
-    display:auto;
+    display: block;
     /* Display property */
     grid-template-columns: 1fr 1fr;
     /* Grid template columns */
@@ -163,8 +165,8 @@ footer {
 }
 button {
     display: inline;
+    background-color: #cb912d; /* Fallback color */
     background-color: color(srgb 0.79 0.57 0.16);
-    /* Background color */
     color: color-mix(in srgb, #191303 90%, white);
     /* Text color */
     padding: 10px 20px;
@@ -200,7 +202,7 @@ section {
     padding-right: 8vh;
     padding-bottom: 4vh;
     padding-left: 6vh;
-    border: 2x solid #ccc;
+    border: 2px solid #ccc;
     border-bottom-style: ridge;
     border-radius: 5mm;
     width: 20cm;
